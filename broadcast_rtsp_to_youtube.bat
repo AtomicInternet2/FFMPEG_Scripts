@@ -1,0 +1,1 @@
+ffmpeg -rtsp_transport tcp -i "rtsp://rtsp:user@192.168.0.10:554/Streaming/Channels/101/?transportmode=unicast.sdp" -x264-params keyint=60:scenecut=0 -vcodec libx264 -b:a 128k -ar 44100 -f flv rtmp://x.rtmp.youtube.com/live2/youtubekey
